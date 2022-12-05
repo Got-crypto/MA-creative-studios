@@ -10,6 +10,7 @@ export default function Navbar({handleNavOpen}){
                         <Logo />
                         <p className="text-xl mx-2 hover:underline cursor-pointer">About</p>
                         <p className="text-xl mx-2 hover:underline cursor-pointer">Services</p>
+                        <p className="text-xl mx-2 hover:underline cursor-pointer">Gallery</p>
                         <p className="text-xl mx-2 hover:underline cursor-pointer">Blog</p>
                     </div>
                     <div className="md:hidden flex h-full flex-row justify-end w-full items-center">
