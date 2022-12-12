@@ -19,3 +19,24 @@ You're about to initialize a Firebase project in this directory:
 
   C:\Users\HEWLETT-PACKARD\vscodepgs\ted-site\metamorph
 
+[debug] [2022-12-12T20:24:29.234Z] ----------------------------------------------------------------------
+[debug] [2022-12-12T20:24:29.236Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\HEWLETT-PACKARD\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2022-12-12T20:24:29.236Z] CLI Version:   11.17.0
+[debug] [2022-12-12T20:24:29.236Z] Platform:      win32
+[debug] [2022-12-12T20:24:29.236Z] Node Version:  v16.14.0
+[debug] [2022-12-12T20:24:29.237Z] Time:          Mon Dec 12 2022 22:24:29 GMT+0200 (Central Africa Time)
+[debug] [2022-12-12T20:24:29.237Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-12-12T20:24:29.246Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-12-12T20:24:29.246Z] > authorizing via signed-in user (pecpalmplay@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\HEWLETT-PACKARD\vscodepgs\ted-site\metamorph
+
