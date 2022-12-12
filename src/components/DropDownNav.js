@@ -2,7 +2,7 @@ import { motion } from "framer-motion"
 import { useEffect } from "react"
 import Logo from "./Logo"
 
-export default function DropdownNav({navOpen, handleNavOpen, setNavOpen}){
+export default function DropdownNav({navOpen, handleNavOpen, setNavOpen, handleScroll}){
 
     useEffect(()=>{
         window.addEventListener('resize', ()=> {
@@ -15,13 +15,13 @@ export default function DropdownNav({navOpen, handleNavOpen, setNavOpen}){
     return(
         <motion.div
             animate={{
-                y: navOpen ? '19.25rem' : 0
+                y: navOpen ? '24.5rem' : 0
             }}
             transition={{
                 duration: 1,
                 type: "spring"
             }}
-        className="flex -top-[19.25rem] h-auto bg-slate-300 w-full absolute z-40 flex-col justify-center items-center">
+        className="flex -top-[24.5rem] h-auto bg-slate-300 w-full absolute z-40 flex-col justify-center items-center">
             <div className="h-14 w-full flex flex-row justify-around items-center">
                 <div className="h-12">
                     <Logo />
@@ -43,7 +43,7 @@ export default function DropdownNav({navOpen, handleNavOpen, setNavOpen}){
                     delay: 1,
                     type: 'spring'
                 }}
-            className="h-20 w-full mt-1 flex justify-center bg-primary hover:bg-transparent cursor-pointer items-center">About</motion.p>
+            className="h-20 w-full mt-1 flex justify-center bg-primary hover:bg-transparent cursor-pointer items-center" onClick={() => handleScroll('about') }>About</motion.p>
             <motion.p animate={{
                 rotateX: navOpen ? 0 : -90
             }} 
@@ -51,7 +51,7 @@ export default function DropdownNav({navOpen, handleNavOpen, setNavOpen}){
                     delay: 1,
                     type: 'spring'
                 }}
-            className="h-20 w-full mt-1 flex justify-center bg-primary hover:bg-transparent cursor-pointer items-center">Services</motion.p>
+            className="h-20 w-full mt-1 flex justify-center bg-primary hover:bg-transparent cursor-pointer items-center" onClick={() => handleScroll('services') }>Services</motion.p>
             <motion.p animate={{
                 rotateX: navOpen ? 0 : -90
             }} 
@@ -59,7 +59,15 @@ export default function DropdownNav({navOpen, handleNavOpen, setNavOpen}){
                     delay: 1,
                     type: 'spring'
                 }}
-            className="h-20 w-full mt-1 flex justify-center bg-primary hover:bg-transparent cursor-pointer items-center">Blog</motion.p>
+            className="h-20 w-full mt-1 flex justify-center bg-primary hover:bg-transparent cursor-pointer items-center" onClick={() => handleScroll('benefits') }>Benefits</motion.p>
+            <motion.p animate={{
+                rotateX: navOpen ? 0 : -90
+            }} 
+                transition={{
+                    delay: 1,
+                    type: 'spring'
+                }}
+            className="h-20 w-full mt-1 flex justify-center bg-primary hover:bg-transparent cursor-pointer items-center" onClick={() => handleScroll('gallery') }>Gallery</motion.p>
         </motion.div>
     )
 }

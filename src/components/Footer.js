@@ -4,7 +4,7 @@ import twittericon from '../images/twitter-icon.png'
 import instagramicon from '../images/instagram-icon.png'
 import FooterHeader from './footer-header'
 
-export default function Footer(){
+export default function Footer({handleScroll}){
     return(
         <div className="h-auto relative z-30 w-full bg-[#232323]">
             <div className="w-full h-auto md:h-screen flex flex-col justify-center items-center">
@@ -30,10 +30,10 @@ export default function Footer(){
                     <div className='md:w-1/3 w-5/6 my-8 mx-auto flex flex-col justify-between items-start'>
                         <FooterHeader text={'Navigation'} />
                         <div className='py-5'>
-                            <p className='text-white  py-2 hover:text-primary cursor-pointer opacity-50 first-letter:uppercase text-lg'>About</p>
-                            <p className='text-white  py-2 hover:text-primary cursor-pointer opacity-50 first-letter:uppercase text-lg'>Services</p>
-                            <p className='text-white  py-2 hover:text-primary cursor-pointer opacity-50 first-letter:uppercase text-lg'>Gallery</p>
-                            <p className='text-white  py-2 hover:text-primary cursor-pointer opacity-50 first-letter:uppercase text-lg'>Blog</p>
+                            <p className='text-white  py-2 hover:text-primary cursor-pointer opacity-50 first-letter:uppercase text-lg' onClick={() => handleScroll('about') }>About</p>
+                            <p className='text-white  py-2 hover:text-primary cursor-pointer opacity-50 first-letter:uppercase text-lg' onClick={() => handleScroll('services') }>Services</p>
+                            <p className='text-white  py-2 hover:text-primary cursor-pointer opacity-50 first-letter:uppercase text-lg' onClick={() => handleScroll('benefits') }>benefits</p>
+                            <p className='text-white  py-2 hover:text-primary cursor-pointer opacity-50 first-letter:uppercase text-lg' onClick={() => handleScroll('gallery') }>Gallery</p>
                         </div>
                     </div>
                     <div className='md:w-1/3 w-5/6 my-8 mx-auto flex flex-col justify-between items-start'>

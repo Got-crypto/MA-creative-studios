@@ -1,9 +1,22 @@
-import { motion } from "framer-motion"
+import { motion, useScroll } from "framer-motion"
+import { useEffect, useState } from "react"
 
-export default function HeroSection(){
+export default function HeroSection({handleScroll}){
+
+    
+    useEffect(()=>{
+
+        let hero = document.getElementById('bg-hero')
+        window.addEventListener('scroll', ()=> {
+
+            hero.style.backgroundPositionY = `${-window.scrollY}px`
+
+        })
+    }, [])
+
     return(
         <>
-            <div className="fixed z-0 h-screen bg-hero bg-center bg-cover bg-no-repeat w-full">
+            <div className='fixed z-0 h-screen bg-hero bg-cover bg-no-repeat w-full' id="bg-hero">
                 <div className="h-full w-full bg-black opacity-70" />
             </div>
             <div className="relative z-10 h-screen max-w-screen-lg mx-auto flex justify-center flex-col items-start ">
@@ -33,9 +46,9 @@ export default function HeroSection(){
                                     duration: 1.5,
                                     ease: "backOut"
                               }}
-                        className="text-white font-light text-md">An investment that gives a handsome return.</motion.p>
+                        className="text-white font-regular text-md">An investment that gives a handsome return.</motion.p>
                     </div>
-                    <button className="p-4 bg-primary font-bold text-sm rounded-tl-2xl rounded-br-2xl mt-10" >
+                    <button onClick={()=>handleScroll('newsletter')} className="p-4 bg-primary font-bold text-sm rounded-tl-2xl rounded-br-2xl mt-10" >
                         Learn more
                     </button>
                 </div>
