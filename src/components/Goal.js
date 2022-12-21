@@ -1,7 +1,7 @@
 import icon from '../images/business-logo.png'
 import { motion } from 'framer-motion'
 
-export default function Goal({setAbout}){
+export default function Goal({setAbout, handleScroll}){
 
     const about = document.getElementById('about')
 
@@ -25,7 +25,7 @@ export default function Goal({setAbout}){
                 }}
 
             className="h-auto max-w-screen-lg flex flex-col text-center justify-center items-center mx-auto">
-                <img src={icon} alt='meta' className='h-10 mt-10' />
+                <img src={icon} onClick={ () => handleScroll('home') } alt='meta' className='cursor-pointer h-10 mt-10' />
                 <h1 className='font-bold mt-3 text-2xl'>
                     Welcome to MA Creative Studios
                 </h1>

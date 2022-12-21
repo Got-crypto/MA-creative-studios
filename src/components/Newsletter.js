@@ -104,14 +104,14 @@ export default function Newsletter({handleScroll, setNewsletter}){
             </div>
         </div>
         ) : (
-            <div id="newsletter" className="h-[140vh] md:h-[80vh] relative w-full bg-marvin bg-cover bg-center bg-no-repeat">
+            <div id="newsletter" className="h-[100vh] md:h-[80vh] relative w-full bg-marvin bg-cover bg-center bg-no-repeat">
                 <div className="h-full w-full absolute bg-[#333399] opacity-90" />
                 <div className="h-full absolute w-full flex flex-col justify-center items-center">
                     <h1 className="font-hero text-white text-3xl cursor-default">
                         MA Creative Studios
                     </h1>
-                    <div className="grid grid-cols-2 overflow-hidden py-5 cursor-default gap-8 text-lg text-justify  w-full max-w-screen-lg font-regular text-white">
-                        <p className="first-letter:text-6xl first-letter:font-extrabold first-letter:text-primary first-letter:lowercase">
+                    <div className="grid grid-cols-2 overflow-hidden py-5 cursor-default gap-8 text-sm text-justify  w-full max-w-screen-lg font-regular text-white">
+                        <p className="first-letter:text-5xl first-letter:font-extrabold first-letter:text-primary first-letter:lowercase">
                             Please imagine business as a sport and your business as a team or an athlete and just 
                             like any other sport competition is inevitable. And businesses that offer the same 
                             products or services as you, are the opposition if your business has more clients, 

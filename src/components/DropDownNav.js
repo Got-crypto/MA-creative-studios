@@ -23,8 +23,8 @@ export default function DropdownNav({navOpen, handleNavOpen, setNavOpen, handleS
             }}
         className="flex -top-[24.5rem] h-auto bg-slate-300 w-full absolute z-40 flex-col justify-center items-center">
             <div className="h-14 w-full flex flex-row justify-around items-center">
-                <div className="h-12">
-                    <Logo />
+                <div className="h-12 cursor-pointer" onClick={()=>handleScroll('home')}>
+                    <Logo  />
                 </div>
                 <svg
                     onClick={handleNavOpen}

@@ -19,12 +19,6 @@ export default function Footer({handleScroll}){
                             <a href={FACEBOOK} target='_blank' rel='noreferrer'>
                                 <img src={facebookicon} alt='facebook icon' className='w-10 h-10'/>
                             </a>
-                            <a href={TWITTER} className='mx-8' target='_blank' rel='noreferrer'>
-                                <img src={twittericon} alt='twitter icon' className='w-10 h-10'/>
-                            </a>
-                            <a href={INSTAGRAM} target='_blank' rel='noreferrer'>
-                                <img src={instagramicon} alt='instagram icon' className='w-10 h-10'/>
-                            </a>
                         </div>
                     </div>
                     <div className='md:w-1/3 w-5/6 my-8 mx-auto flex flex-col justify-between items-start'>
@@ -38,29 +32,7 @@ export default function Footer({handleScroll}){
                     </div>
                     <div className='md:w-1/3 w-5/6 my-8 mx-auto flex flex-col justify-between items-start'>
                         <FooterHeader text={'Have a Question?'} />
-                        <div className='flex flex-col justify-start items-start'>
-                            <div className='flex flex-row justify-start items-center py-2 text-white opacity-50 first-letter:uppercase text-lg'>
-                                <svg 
-                                    className="w-6 h-6 text-primary opacity-50" 
-                                    fill="currentColor" 
-                                    viewBox="0 0 20 20" 
-                                    xmlns="http://www.w3.org/2000/svg"
-                                >
-                                    <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
-                                </svg>
-                                <p className='ml-5'>
-                                    {PHYSICALADDRESS.institution}
-                                </p>
-                            </div>
-                            <div className='text-white opacity-50 py-2 ml-5 first-letter:uppercase text-lg'>
-                                <p className='ml-6 pb-1'>
-                                    {PHYSICALADDRESS.street}
-                                </p>
-                                <p className='ml-6 py-1'>
-                                    {PHYSICALADDRESS.town}
-                                </p>
-                            </div>
-                        </div>
+                        
                         <div className='flex flex-row justify-start items-center'>
                             <svg 
                                 className="w-6 h-6 text-primary opacity-50" 

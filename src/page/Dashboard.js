@@ -26,6 +26,7 @@ export default function Dashboard(){
     const [benefits, setBenefits] = useState()
     const [gallery, setGallery] = useState()
     const [newsletter, setNewsletter] = useState()
+    const [home, setHome] = useState()
     const [selectedImage, setSelectedImage] = useState()
 
     console.log('about', about)
@@ -52,6 +53,10 @@ export default function Dashboard(){
             case 'newsletter':
                 newsletter.scrollIntoView()
                 break
+            
+            case 'home':
+                home.scrollIntoView()
+                break
 
             default:
                 break;
@@ -70,8 +75,8 @@ export default function Dashboard(){
             <Navbar handleNavOpen={handleNavOpen} handleScroll={handleScroll} />
             <DropdownNav handleScroll={handleScroll} handleNavOpen={handleNavOpen} navOpen={navOpen} setNavOpen={setNavOpen}/>
             <StickyNav handleScroll={handleScroll}/>
-            <HeroSection handleScroll={handleScroll} />
-            <Goal setAbout={setAbout} />
+            <HeroSection handleScroll={handleScroll} setHome={setHome} />
+            <Goal handleScroll={handleScroll} setAbout={setAbout} />
             <Services setServices={setServices} />
             <Newsletter handleScroll={handleScroll} setNewsletter={setNewsletter} />
             <Benefits setBenefits={setBenefits} />

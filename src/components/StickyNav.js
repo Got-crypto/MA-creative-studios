@@ -27,7 +27,7 @@ export default function StickyNav({handleScroll}){
         }}
         className="fixed md:flex h-12 w-full bg-[#232323] top-0 justify-center items-center z-50">
             <div className="h-full w-full max-w-screen-lg flex flex-row justify-between items-center">
-                <Logo />
+                <Logo handleScroll={handleScroll} />
                 <div className="flex flex-row justify-between items-center h-full">
                     <p className="text-xl text-white mx-2 hover:underline cursor-pointer" onClick={() => handleScroll('about') }>About</p>
                     <p className="text-xl text-white mx-2 hover:underline cursor-pointer" onClick={() => handleScroll('services') }>Services</p>
